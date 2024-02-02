@@ -10,3 +10,21 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.pixel:hover {
+    background-color: gray;
+}
