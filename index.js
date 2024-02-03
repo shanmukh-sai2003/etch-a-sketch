@@ -7,6 +7,9 @@ const gridSizeSelector = document.querySelector(".grid-size");
 const eraserBtn = document.querySelector(".eraser");
 const penBtn = document.querySelector(".pen");
 const clearBtn = document.querySelector(".clear");
+const year = document.querySelector(".year");
+const date = new Date();
+year.textContent = date.getFullYear();
 
 let penColor = "black";
 let mouseDown = false;
@@ -30,9 +33,15 @@ body.addEventListener("mouseup", () => mouseDown = false);
 
 eraserBtn.addEventListener("click", () => {
     isEraser = !isEraser;
+    eraserBtn.classList.toggle("btn-clicked");
+    penBtn.classList.toggle("btn-clicked");
 });
 
-penBtn.addEventListener("click", () => isEraser = false);
+penBtn.addEventListener("click", () => {
+    isEraser = false;
+    eraserBtn.classList.toggle("btn-clicked");
+    penBtn.classList.toggle("btn-clicked");
+});
 
 clearBtn.addEventListener("click", () => {
     container.innerHTML = "";

@@ -10,12 +10,14 @@
             <h1>Etch-a-sketch</h1>
         </header>
         <main>
-            <div class="controls">
-                <input type="color" name="penColor" class="pen-color" value="#000000">
-                <button class="pen">pen</button>
-                <input type="range" max="100" min="1" name="gridSize" class="grid-size" value="16">
-                <button class="eraser">eraser</button>
-                <button class="clear">clear</button>
+            <div class="controls-pane">
+                <div class="controls">
+                    <input type="color" name="penColor" class="pen-color" value="#000000">
+                    <button class="pen btn btn-clicked">pen</button>
+                    <input type="range" max="100" min="1" name="gridSize" class="grid-size" value="16">
+                    <button class="eraser btn">eraser</button>
+                    <button class="clear btn">clear</button>
+                </div>
             </div>
             <div class="canvas">
                 <div class="container">
@@ -23,6 +25,9 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <p>Copyright &copy; <span class="year"></span> shanmukh-sai2003</p>
+        </footer>
         <script src="./index.js"></script>
     </body>
 </html>
