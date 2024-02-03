@@ -15,7 +15,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 50px;
+    /* margin-left: 100px; */
 }
+
+.canvas {
+    flex: 1.5;
+    display: flex;
+    /* justify-content: center; */
+}
+
 .container {
     width: 500px;
     height: 500px;
@@ -25,3 +34,8 @@ main {
     margin-top: 20px;
 }
 
+.controls {
+    display: flex;
+    flex-direction: column;
+    flex: 0.68;
+}
